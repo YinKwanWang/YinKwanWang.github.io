@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹窗</title>
+	<link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+	<button id="btn">弹弹弹</button>
+    <div id="wrap">
+    	<div class="box">
+    		<div class="header">
+    			<h2>弹窗头部</h2>
+    			<span style="cursor: pointer;">×</span>
+    		</div>
+    		<div class="content">
+    			<h3>这是一个弹窗效果</h3>
+    			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam, blanditiis, quos corrupti voluptate minus vero alias, atque velit et aspernatur, ratione distinctio. Corporis, ex perferendis. Nisi, doloribus. Quis, harum.</h4>
+    		</div>
+    		<div class="footer">
+    			<h2>弹窗底部</h2>
+    		</div>
+    	</div>
+    </div>
+</body>
+<script>
+	var btn = document.querySelector('#btn');
+	var wrap = document.querySelector('#wrap');
+	var head = document.querySelector('.header');
+	var box = document.querySelector('.box');
+	var sp1 = head.querySelector('span');
+	btn.onclick = function(){
+        wrap.style.display = 'block';
+	}
+    sp1.onclick = function(){
+    	wrap.style.display = 'none';
+    }
+</script>
+</html>
