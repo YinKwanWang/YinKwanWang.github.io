@@ -35,5 +35,13 @@
     sp1.onclick = function(){
     	wrap.style.display = 'none';
     }
+    wrap.onclick = function(e){
+	    var e = e || window.event;
+	    var target = e.target || e.srcElement;
+	    var _tar = box;
+	    if( !(target == _tar) && ! _tar.contains(target) ){
+	        wrap.style.display = "none"
+	    }
+	}
 </script>
 </html>
