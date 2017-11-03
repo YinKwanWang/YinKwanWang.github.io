@@ -29,11 +29,35 @@
 	var head = document.querySelector('.header');
 	var box = document.querySelector('.box');
 	var sp1 = head.querySelector('span');
-	btn.onclick = function(){
+    btn.onclick = function(){
         wrap.style.display = 'block';
 	}
     sp1.onclick = function(){
     	wrap.style.display = 'none';
     }
+ //阻止冒泡方法一
+//     也就是阻止点box隐藏
+     wrap.onclick = function(){
+        wrap.style.display = 'none';
+    }
+    box.onclick = function(r){
+        var e = r || window.event;
+        // r.cancelBubble = true;//阻止冒泡ie
+        console.log(r);
+        if(r.stopPropagation){//非ie
+            r.stopPropagation();
+        }else{
+            r.cancelBubble = true;
+        }
+    }
+//  或者判断方法2；
+//     wrap.onclick = function(e){
+// 	    var e = e || window.event;
+// 	    var target = e.target || e.srcElement;
+// 	    var _tar = box;
+// 	    if( !(target == _tar) && ! _tar.contains(target) ){
+// 	        wrap.style.display = "none"
+// 	    }
+// 	}
 </script>
 </html>
