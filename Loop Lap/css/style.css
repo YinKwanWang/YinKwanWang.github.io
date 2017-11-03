@@ -1,0 +1,14 @@
+.navbar{border-bottom: 4px solid #008ed6;opacity: 0.8;}
+.img-rgb{background: black;background: url(../img/home.jpg) no-repeat;
+min-height: 700px;background-size: 100% 30%;}
+.verhl{background: rgba(0,0,0,0.6);min-height: 700px;}
+.verhl .fa{font-size: 40px;background: #fff;color: #008ed6;border-radius: 5px;}
+.verhl p{font-size: 17px;}
+.car-rgb{opacity: 0.8;}
+.bg-black{background: #3a3a3a;}
+.contact{min-height: 500px;width: 100%;background: #fff;}
+.contact .fa{font-size: 43px;}
+.creat{min-height: 500px;width: 100%;background: #3a3a3a;}
+.creat .fa{font-size: 40px;background: #fff;color: #008ed6;border-radius: 5px;}
+.share{min-height: 500px;width: 100%;background: #3a3a3a;}
+.share .fa{font-size: 40px;background: #fff;border-radius: 5px;}
